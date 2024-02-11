@@ -1,0 +1,7 @@
+
+1.	Sanitize User Input:
+o	Use mysqli_real_escape_string() or prepared statements to sanitize user input before using it in queries.
+o	For example, replace $username with mysqli_real_escape_string($db, $username).
+2.	Avoid Displaying Sensitive Information:
+o	In a production environment, avoid displaying raw user data directly. Instead, use proper authentication and authorization mechanisms.
+Remember that security is crucial, especially when handling user input and database queries. Always follow best practices to prevent vulnerabilities like SQL injection.
